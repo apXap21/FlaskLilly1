@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Greetings</title>
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}"
+/>
+</head>
+
+<body>
+{% if num%2==0 %}
+ <p>{{num}} is even</p>
+{% else %}
+<p>{{num}} is odd</p>
+{% endif %}
+
+{% for x in name  %}
+<p>{{x}}</p>
+{% endfor %}
+
+</body>
+
+</html>
